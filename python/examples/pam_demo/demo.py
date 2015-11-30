@@ -1,8 +1,7 @@
 from gevent.monkey import patch_all
 patch_all()
 
-import sys
-from pubnub import Pubnub
+from pubnub.pubnub import Pubnub
 import random
 import json
 

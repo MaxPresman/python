@@ -5,10 +5,9 @@
 ## Copyright (c) 2010 Stephen Blum
 ## http://www.pubnub.com/
 
-import sys
-from pubnub import Pubnub
-
 from optparse import OptionParser
+
+from pubnub.pubnub import Pubnub
 
 
 parser = OptionParser()

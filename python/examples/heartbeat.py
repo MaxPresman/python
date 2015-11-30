@@ -11,7 +11,7 @@ import sys
 
 from datetime import datetime
 
-from pubnub import Pubnub as Pubnub
+from pubnub.pubnub import Pubnub as Pubnub
 #from pubnub import PubnubTornado as Pubnub
 #from pubnub import PubnubTwisted as Pubnub
 

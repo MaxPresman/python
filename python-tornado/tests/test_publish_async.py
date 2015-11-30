@@ -1,7 +1,6 @@
-
-
-from pubnub import PubnubTwisted as Pubnub
 import time
+
+from pubnub.pubnub import PubnubTwisted as Pubnub
 
 pubnub = Pubnub("demo", "demo")
 pubnub_enc = Pubnub("demo", "demo", cipher_key="enigma")

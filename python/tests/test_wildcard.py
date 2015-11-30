@@ -6,7 +6,7 @@
 ## http://www.pubnub.com/
 
 
-from inspect import currentframe, getframeinfo, getouterframes
+from inspect import currentframe, getouterframes
 
 def get_line():
 	#print getouterframes(currentframe())[3]
@@ -44,8 +44,7 @@ def get_random():
 	return str(random.randint(1, 99999))
 
 
-import sys
-from pubnub import Pubnub
+from pubnub.pubnub import Pubnub
 
 def red(name): print '\033[1;31m' + name +  '\033[1;m'
 

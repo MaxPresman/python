@@ -6,23 +6,20 @@
 ## http://www.pubnub.com/
 
 
+import atexit
+import json
+import os
+import readline
 import sys
-from pubnub import Pubnub
 import threading
 from datetime import datetime
 
-from cmd2 import Cmd, make_option, options, Cmd2TestCase
-import optparse
-import json
-
-import atexit
-import os
-import readline
-import rlcompleter
-
 import pygments
-from pygments.lexers import JsonLexer
+from cmd2 import Cmd, make_option, options
 from pygments.formatters import TerminalFormatter
+from pygments.lexers import JsonLexer
+
+from pubnub.pubnub import Pubnub
 
 lexer = JsonLexer()
 formatter = TerminalFormatter()

@@ -1,7 +1,7 @@
 
 from gevent import monkey; monkey.patch_all()
 
-from pubnub import Pubnub
+from pubnub.pubnub import Pubnub
 
 pubnub = Pubnub(publish_key="ds", subscribe_key="ds",
             secret_key="ds", ssl_on=False)

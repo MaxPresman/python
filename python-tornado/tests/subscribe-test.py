@@ -10,11 +10,12 @@
 ## -----------------------------------
 
 import sys
-import datetime
-from pubnub import PubnubTwisted as Pubnub
+import threading
 from functools import partial
 from threading import current_thread
-import threading
+
+from pubnub.pubnub import PubnubTwisted as Pubnub
+
 publish_key = len(sys.argv) > 1 and sys.argv[1] or 'demo'
 subscribe_key = len(sys.argv) > 2 and sys.argv[2] or 'demo'
 secret_key = len(sys.argv) > 3 and sys.argv[3] or 'demo'

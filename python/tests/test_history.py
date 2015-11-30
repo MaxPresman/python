@@ -1,8 +1,9 @@
-from pubnub import Pubnub
-import time
 import random
+import time
+
 from nose.tools import with_setup
 
+from pubnub.pubnub import Pubnub
 
 pubnub = Pubnub("ds","ds")
 pubnub_enc = Pubnub(publish_key="ds",subscribe_key="ds",cipher_key="enigma")

@@ -1,7 +1,6 @@
-
-
-from pubnub import PubnubTwisted as Pubnub
 import time
+
+from pubnub.pubnub import PubnubTwisted as Pubnub
 
 pubnub = Pubnub("demo","demo")
 pubnub_pam = Pubnub("pub-c-c077418d-f83c-4860-b213-2f6c77bde29a", 

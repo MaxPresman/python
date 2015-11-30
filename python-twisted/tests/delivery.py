@@ -9,12 +9,11 @@
 ## PubNub 3.1 Real-time Push Cloud API
 ## -----------------------------------
 
-import sys
 import datetime
+import sys
 import time
-import math
 
-from pubnub import PubnubTwisted as Pubnub
+from pubnub.pubnub import PubnubTwisted as Pubnub
 
 ## -----------------------------------------------------------------------
 ## Configuration

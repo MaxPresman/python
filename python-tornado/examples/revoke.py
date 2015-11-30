@@ -7,7 +7,8 @@
 
 
 import sys
-from pubnub import PubnubTornado as Pubnub
+
+from pubnub.pubnub import PubnubTornado as Pubnub
 
 publish_key = len(sys.argv) > 1 and sys.argv[1] or 'pam'
 subscribe_key = len(sys.argv) > 2 and sys.argv[2] or 'pam'

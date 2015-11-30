@@ -1,6 +1,6 @@
-from pubnub import Pubnub
 import random
 
+from pubnub.pubnub import Pubnub
 
 pubnub = Pubnub("demo", "demo")
 pubnub.set_u(True)

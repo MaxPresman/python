@@ -10,7 +10,7 @@ from gevent import monkey; monkey.patch_all()
 
 import sys
 import time
-from pubnub import Pubnub
+from pubnub.pubnub import Pubnub
 
 publish_key = len(sys.argv) > 1 and sys.argv[1] or 'demo'
 subscribe_key = len(sys.argv) > 2 and sys.argv[2] or 'demo'
